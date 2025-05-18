@@ -13,21 +13,21 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #fceabb, #f8b500);
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      padding: 50px 20px;
-      color: #333;
+      padding: 60px 20px;
+      color: #fff;
     }
 
     h1 {
       font-size: 48px;
       font-weight: 600;
       margin-bottom: 50px;
-      background: linear-gradient(to right, #ff416c, #ff4b2b);
+      background: linear-gradient(to right, #00c6ff, #0072ff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: fadeInDown 1s ease;
@@ -43,9 +43,10 @@
     }
 
     .category {
-      background: white;
+      background: rgba(255, 255, 255, 0.05);
       border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
       overflow: hidden;
       transition: transform 0.4s ease, box-shadow 0.4s ease;
       width: 300px;
@@ -54,8 +55,8 @@
     }
 
     .category:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+      transform: translateY(-12px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
     }
 
     .category img {
@@ -63,15 +64,17 @@
       height: 350px;
       object-fit: cover;
       display: block;
+      filter: brightness(0.9);
     }
 
     .category h2 {
       font-size: 22px;
       font-weight: 600;
       padding: 20px;
-      background: linear-gradient(to right, #ff4b2b, #ff416c);
-      color: white;
+      background: linear-gradient(to right, #1cd8d2, #93edc7);
+      color: #000;
       margin: 0;
+      text-align: center;
     }
 
     @keyframes fadeInDown {
