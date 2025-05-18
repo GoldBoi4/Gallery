@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Categories</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fceabb, #f8b500);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 50px 20px;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: 600;
+      margin-bottom: 50px;
+      background: linear-gradient(to right, #ff416c, #ff4b2b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeInDown 1s ease;
+    }
+
+    .categories {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .category {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      overflow: hidden;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      width: 300px;
+      animation: fadeInUp 1.2s ease;
+      text-decoration: none;
+    }
+
+    .category:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    }
+
+    .category img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .category h2 {
+      font-size: 22px;
+      font-weight: 600;
+      padding: 20px;
+      background: linear-gradient(to right, #ff4b2b, #ff416c);
+      color: white;
+      margin: 0;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 32px;
+      }
+      .category {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Explore Photo Categories</h1>
+
+  <div class="categories">
+    <a class="category" href="https://celebrityphoto.netlify.app/" target="_blank">
+      <img src="https://raw.githubusercontent.com/GoldBoi4/celebrity/main/IMG-20250514-WA0014.jpg" alt="Celebrity">
+      <h2>Celebrities</h2>
+    </a>
+    <a class="category" href="https://studentgallerytkds.netlify.app/" target="_blank">
+      <img src="https://raw.githubusercontent.com/GoldBoi4/Photo/main/400449668_17946162770685489_8330790916225318287_n.jpg" alt="Student">
+      <h2>Students</h2>
+    </a>
+  </div>
+
+</body>
+</html>
